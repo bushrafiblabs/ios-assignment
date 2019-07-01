@@ -37,16 +37,14 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7xg-kG-pdr">
                                                     <rect key="frame" x="11" y="0.0" width="103" height="103"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="103" id="2Nz-7g-KP3"/>
-                                                        <constraint firstAttribute="height" constant="103" id="qnP-KT-sCT"/>
-                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.3921568627" green="0.3921568627" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7xg-kG-pdr" secondAttribute="bottom" constant="9" id="H08-pl-VUr"/>
                                             <constraint firstItem="7xg-kG-pdr" firstAttribute="leading" secondItem="cDC-pj-HNx" secondAttribute="leading" constant="11" id="XmB-nB-UvF"/>
+                                            <constraint firstAttribute="trailing" secondItem="7xg-kG-pdr" secondAttribute="trailing" id="hi1-CG-4W7"/>
                                             <constraint firstItem="7xg-kG-pdr" firstAttribute="top" secondItem="cDC-pj-HNx" secondAttribute="top" id="kOq-Ca-LKh"/>
                                         </constraints>
                                         <connections>
