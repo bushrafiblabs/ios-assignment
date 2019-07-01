@@ -137,7 +137,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
   }
 
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {    
-    if collectionView.numberOfItems(inSection: 0) % 2 != 0 && indexPath.row == 0 {
+    if collectionView.numberOfItems(inSection: indexPath.section) % 2 != 0 && indexPath.row == 0 {
       return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.width)
     }
     return CGSize(width: (collectionView.frame.size.width - 5) / 2, height: (collectionView.frame.size.width - 5) / 2)
