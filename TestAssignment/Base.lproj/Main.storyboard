@@ -69,12 +69,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="Jpx-ct-y4D"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="mLM-9x-4VG" firstAttribute="top" secondItem="gnC-bi-rIG" secondAttribute="top" constant="21" id="Qpg-RP-jLj"/>
                                         <constraint firstItem="KGL-P3-eAa" firstAttribute="leading" secondItem="gnC-bi-rIG" secondAttribute="leading" constant="10" id="Qut-Lz-LwS"/>
