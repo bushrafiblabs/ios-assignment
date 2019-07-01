@@ -1,5 +1,5 @@
 //
-//  GridCollectionViewCell.swift
+//  SectionHeader.swift
 //  TestAssignment
 //
 //  Created by Bushra Sagir on 7/1/19.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class GridCollectionViewCell: UICollectionViewCell {
-    
+class SectionHeader: UICollectionReusableView {
+        
 }
