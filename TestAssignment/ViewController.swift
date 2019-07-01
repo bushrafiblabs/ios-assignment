@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     let layout = UICollectionViewFlowLayout()
     layout.headerReferenceSize =     CGSize(
       width: collectionView.frame.size.width,
-      height: 64
+      height: 84
     )
     collectionView.collectionViewLayout = layout
   }
