@@ -9,5 +9,10 @@
 import UIKit
 
 class SectionHeader: UICollectionReusableView {
-        
+  @IBOutlet weak var profileImage: UIImageView!
+  @IBOutlet weak var name: UILabel!
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
 }
