@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gridViewCelll" id="cDC-pj-HNx" customClass="GridCollectionViewCell" customModule="TestAssignment" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gridViewCelll" id="cDC-pj-HNx" customClass="CollectionViewCell" customModule="TestAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="114" height="112"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -49,6 +49,9 @@
                                             <constraint firstItem="7xg-kG-pdr" firstAttribute="leading" secondItem="cDC-pj-HNx" secondAttribute="leading" constant="11" id="XmB-nB-UvF"/>
                                             <constraint firstItem="7xg-kG-pdr" firstAttribute="top" secondItem="cDC-pj-HNx" secondAttribute="top" id="kOq-Ca-LKh"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="itemImage" destination="7xg-kG-pdr" id="rzH-dF-NJL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyHeaderView" id="gnC-bi-rIG" customClass="SectionHeader" customModule="TestAssignment" customModuleProvider="target">

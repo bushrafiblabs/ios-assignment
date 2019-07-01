@@ -84,8 +84,15 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gridViewCelll", for: indexPath as IndexPath)
-    
+    let cell: CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "gridViewCelll", for: indexPath as IndexPath) as? CollectionViewCell ?? UICollectionViewCell() as! CollectionViewCell
+    let item = model[indexPath.section].items[indexPath.row]
+    let imageUrl = URL(string: item)
+    cell.itemImage.af_setImage(
+      withURL: imageUrl!,
+      placeholderImage: UIImage(named: "placeHolderImage"),
+      imageTransition: .crossDissolve(0.2)
+    )
+  
     return cell
   }
 
@@ -129,6 +136,13 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     return returnValue
   }
 
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {    
+    if collectionView.numberOfItems(inSection: 0) % 2 != 0 && indexPath.row == 0 {
+      return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.width)
+    }
+    return CGSize(width: (collectionView.frame.size.width - 5) / 2, height: (collectionView.frame.size.width - 5) / 2)
+  }
+  
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
     return 5
   }
