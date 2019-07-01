@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         for dic in users{
           self.model.append(User(dic)) // adding now value in Model array
         }
-        print(self.model[0].name) // 1211
+        print(self.model[0].name)
       } catch let parsingError {
         print("Error", parsingError)
       }
@@ -123,12 +123,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
   }
   
   func numberOfSections(in collectionView: UICollectionView) -> Int  {
-    //#warning Incomplete method implementation -- Return the number of sections
     return model.count
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    //#warning Incomplete method implementation -- Return the number of items in the section
     var returnValue = 0
     if model.count > 0 {
       returnValue = model[section].items.count
