@@ -16,6 +16,8 @@
 		E2022FCF22C9BCA4001660EB /* TestAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2022FCE22C9BCA4001660EB /* TestAssignmentUITests.swift */; };
 		E2022FE522CA0CAF001660EB /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2022FE422CA0CAF001660EB /* SectionHeader.swift */; };
 		E21BD7E822CA6E8B00461DE3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BD7E722CA6E8B00461DE3 /* CollectionViewCell.swift */; };
+		E2E911ED22CC713700C4DD26 /* WebServiceHander.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E911EC22CC713700C4DD26 /* WebServiceHander.swift */; };
+		E2E911EF22CC743E00C4DD26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E911EE22CC743E00C4DD26 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		E2022FD022C9BCA4001660EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2022FE422CA0CAF001660EB /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		E21BD7E722CA6E8B00461DE3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E2E911EC22CC713700C4DD26 /* WebServiceHander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHander.swift; sourceTree = "<group>"; };
+		E2E911EE22CC743E00C4DD26 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		E2022FAD22C9BCA2001660EB /* TestAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				E2E911EC22CC713700C4DD26 /* WebServiceHander.swift */,
 				E2022FAE22C9BCA2001660EB /* AppDelegate.swift */,
 				E2022FB022C9BCA2001660EB /* ViewController.swift */,
 				E2022FB222C9BCA2001660EB /* Main.storyboard */,
@@ -129,6 +134,7 @@
 				E2022FBA22C9BCA3001660EB /* Info.plist */,
 				E2022FE422CA0CAF001660EB /* SectionHeader.swift */,
 				E21BD7E722CA6E8B00461DE3 /* CollectionViewCell.swift */,
+				E2E911EE22CC743E00C4DD26 /* User.swift */,
 			);
 			path = TestAssignment;
 			sourceTree = "<group>";
@@ -374,6 +380,8 @@
 			files = (
 				E2022FE522CA0CAF001660EB /* SectionHeader.swift in Sources */,
 				E2022FB122C9BCA2001660EB /* ViewController.swift in Sources */,
+				E2E911EF22CC743E00C4DD26 /* User.swift in Sources */,
+				E2E911ED22CC713700C4DD26 /* WebServiceHander.swift in Sources */,
 				E21BD7E822CA6E8B00461DE3 /* CollectionViewCell.swift in Sources */,
 				E2022FAF22C9BCA2001660EB /* AppDelegate.swift in Sources */,
 			);
